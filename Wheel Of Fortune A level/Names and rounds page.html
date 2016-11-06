@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wheel Of Fortune</title>
+    <script src="settings.js"></script>
+    <script src="Names and rounds java.js"></script>
+    <link rel="stylesheet" href="Game and names and round Style.css">
+</head>
+<body background="Resources/night-sky.jpg">
+    <h2>Wheel Of Fortune</h2>
+    <section id="main">
+        <section class="dashedBorder">
+            <h3>How many rounds of phrases do want to play?</h3>
+            <h4 id='phrase1' class="round" onclick="pick('phrase', 1, 5)">1 round</h4>
+            <h4 id="phrase2" class="round" onclick="pick('phrase', 2, 5)">2 rounds</h4>
+            <h4 id="phrase3" class="round" onclick="pick('phrase', 3, 5)">3 rounds</h4>
+            <h4 id="phrase4" class="round" onclick="pick('phrase', 4, 5)">4 rounds</h4>
+            <h4 id="phrase5" class="round" onclick="pick('phrase', 5, 5)">5 rounds</h4>
+            <br><br><br><br>
+        </section>
+        <section class="dashedBorder">
+            <h3>Would you like the winner to play a bonus round?</h3>
+            <h4 id="bonus1" onclick="pick('bonus', 1, 2)">Yes</h4>
+            <h4 id="bonus2" onclick="pick('bonus', 2, 2)">No</h4>
+            <br><br><br><br>
+        </section>
+        <section class="dashedBorder">
+            <h3>How many players are there?</h3>
+            <h4 id="player1" class="player" onclick="pick('player', 1, 5)">1 player and Computer</h4>
+            <h4 id="player2" class="player" onclick="pick('player', 2, 5)">2 players and Computer</h4>
+            <h4 id="player3" class="player" onclick="pick('player', 3, 5)">1 player</h4>
+            <h4 id="player4" class="player" onclick="pick('player', 4, 5)">2 players</h4>
+            <h4 id="player5" class="player" onclick="pick('player', 5, 5)">3 players</h4>
+            <br><br><br><br>
+        </section>
+        <h3 id="p1">Player 1's name: <input class="playerName" id="input1" type="text" value="Joe"  size="25"></h3>
+        <h3 id="p2">Player 2's name: <input class="playerName" id="input2" type="text" value="Bob" size="25"></h3>
+        <h3 id="p3">Player 3's name: <input class="playerName" id="input3" type="text" value="Best Player" size="25"></h3>
+        <a href="Main%20Game.html"><button id="submit" type="button" onclick="settings.storeSettings()">Submit</button></a>
+
+    </section>
+    
+</body>
+</html>

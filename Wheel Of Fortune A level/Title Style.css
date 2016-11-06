@@ -1,0 +1,46 @@
+
+h1 {
+    margin: 75px 0 0 0 ;
+    text-align: center;
+    color: gold;
+}
+
+#mainWheel {
+    margin: 15px 40%;
+}
+
+h3 {
+    color: gold;
+    position: absolute;
+}
+#small1 {
+    left: 70px;
+    transform: rotate(30deg);
+}
+#small2 {
+    transform: rotate(330deg);
+}
+
+#small3 {
+    left: 50px;
+    transform: rotate(345deg);
+}
+
+button {
+    padding: 10px;
+    font-size: 26px;
+    border-radius: 20px;
+    margin: 50px 0 25px calc(50% - 70px);
+
+}
+
+button:hover {
+    background-color: lightblue;
+}
+
+p {
+    color: gold;
+    margin: 75px 0 0 0 ;
+    text-align: center;
+    font-size: 16px;
+}

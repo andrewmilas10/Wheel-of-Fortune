@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wheel Of Fortune</title>
+    <script src="settings.js"></script>
+    <script src="gameState.js"></script>
+    <script src="computer.js"></script>
+    <script src="wheel.js"></script>
+    <script src="Main Game Javascript.js"></script>
+    <link rel="stylesheet" href="Game and names and round Style.css">
+</head>
+<body background="Resources/night-sky.jpg">
+    <h2>Wheel Of Fortune</h2>
+    <section id="main2">
+        <section id='section1' class="dashedBorder">
+            <button class="top" id="restart" type="button" onclick="restart(true)">Restart Game</button>
+            <a href="Names%20and%20rounds%20page.html"><button class="top" type="button" onclick="">Change Players or Rounds</button></a>
+            <a href="Title.html"><button class="top" type="button" onclick="">Exit</button></a>
+            <br><br>
+            <p class='centered' id="round"></p>
+            <p class='centered' id="category"></p>
+            <pre class='centered' id= "phrase"></pre>
+        </section>
+        <p id="bonusInfo"></p>
+        <p id="bonusInfo2"></p>
+        <pre class="" id="bonusGuess">Phrase: <input id="inputFin" type="text" onkeypress="giveBonusInfo(event)"></pre>
+        <pre class="bonusLetters" id="letter1">Consonant 1: <input id="input1" type="text"></pre>
+        <pre class="bonusLetters" id="letter2">Consonant 2: <input id="input2" type="text"></pre>
+        <pre class="bonusLetters" id="letter3">Consonant 3: <input id="input3" type="text"></pre>
+        <pre class="bonusLetters" id="letter4">Vowel: <input id="input4" type="text"></pre> <br>
+        <button type="button" id="bonusSubmit" onclick="submit()">Submit Letters</button>
+        <pre class='scoresAgain' id="scoresForBonus"></pre>
+        <section id='section2' class="dashedBorder">
+            <img id='wheel' src="Resources/wheel.png" width="300px" height="300px"/>
+            <img id="frame" src="Resources/wheelFrame%20copy.png" height="370" width="180"/>
+            <!--<button id="toggleWheel" type="button" onclick="toggleWheel()">Disable wheel spinning motion</button> For Testing Purposes-->
+        <br><br>
+        </section>
+        <section id='section3' class="dashedBorder">
+            <p class='centered' id="turnInfo"></p>
+            <p class="centered" id="turnInfo2"></p>
+
+            <button class="mainOption" id="spinWheel" type="button" onclick="spinTheWheel()">Spin the Wheel</button>
+            <button class="mainOption" id="buyVowel" type="button" onclick="buyVowel()">Buy a Vowel</button>
+            <button class="mainOption" id="solvePuzzle" type="button" onclick="solvePuzzle()">Solve the Puzzle</button>
+            <br>
+            <input class="" id="guess" type="text" size="30" onkeypress="giveInfo(event)">
+            <button class="transitionButton" id="startBonus" type="button" onclick="bonusRound()">Start Bonus Round</button>
+            <button class="transitionButton" type="button" id="nextTurn" onclick="startTurn()">Go to next person's turn</button>
+            <button class="transitionButton" type="button" id="nextRound" onclick="restart(false)">Next Round</button>
+            <button class="transitionButton" type="button" id="continue" onclick="">Continue</button>
+            <br>
+        </section>
+        <button class="transitionButton" type="button" id="playAgain" onclick="restart(true)">Play Again</button>
+        <pre class='scoresAgain' id="roundScores"></pre>
+        <pre class='scoresAgain' id="scores"></pre>
+    </section>
+</body>
+</html>
