@@ -13,6 +13,7 @@ function editPhrase(guess) {
             if (game.phrase.substr(i, 1)===' ') { //this if's purpose is to add more than one space when a space is found
                 build+='  ';
             }
+            
             build+=' '+game.phrase.substr(i, 1);
             if (game.phrase.substr(i, 1)===guess) { //checks whether the letter was the one being counted
                 numOfTimes+=1;

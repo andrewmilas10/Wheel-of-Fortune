@@ -28,10 +28,7 @@ function setUpScreen() {
     }
 }
 
-
 var numOfPlayers;
-
-
 
 //takes in a list of ids and a string set to 'visible' or 'hidden', setting each object's visibility to this sting
 function toggleVisibility(ids, showOrHide) {
